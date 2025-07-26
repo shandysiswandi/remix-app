@@ -1,0 +1,38 @@
+<svg width="500" height="1080" viewBox="0 0 500 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #F8FAFC; }
+    .shape1 { fill: #E0E7FF; }
+    .shape2 { fill: #C7D2FE; }
+    .shape3 { fill: #A5B4FC; }
+
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0B1120; }
+      .shape1 { fill: #1E293B; }
+      .shape2 { fill: #334155; }
+      .shape3 { fill: #4F46E5; }
+    }
+  </style>
+  
+  <defs>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="60" />
+    </filter>
+    <filter id="blur2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="80" />
+    </filter>
+  </defs>
+
+  <rect class="bg" width="500" height="1080"/>
+  
+  <g opacity="0.6" filter="url(#blur1)">
+    <circle class="shape3" cx="500" cy="0" r="250" />
+  </g>
+  
+  <g opacity="0.5" filter="url(#blur2)">
+    <circle class="shape2" cx="0" cy="450" r="200" />
+  </g>
+
+  <g opacity="0.8" filter="url(#blur1)">
+    <ellipse class="shape1" cx="550" cy="1080" rx="350" ry="250" />
+  </g>
+</svg>

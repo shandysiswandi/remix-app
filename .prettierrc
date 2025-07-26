@@ -1,0 +1,19 @@
+{
+  "semi": true,
+  "singleQuote": false,
+  "printWidth": 110,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "overrides": [
+    { "files": "*.md", "options": { "tabWidth": 2 } },
+    { "files": "*.json", "options": { "tabWidth": 2 } }
+  ],
+  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "importOrder": ["^react$", "^react-dom$", "^react-router$", "<THIRD_PARTY_MODULES>", "^~/(.*)$", "^[./]"],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true,
+  "tailwindStylesheet": "./app/app.css",
+  "tailwindFunctions": ["cn"]
+}

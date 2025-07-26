@@ -1,0 +1,28 @@
+<svg width="500" height="800" viewBox="0 0 500 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+  <style>
+    .bg { fill: #F1F5F9; }
+    .shape1 { fill: #CBD5E1; }
+    .shape2 { fill: #94A3B8; }
+    .shape3 { fill: #E2E8F0; }
+
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #F1F5F9; }
+      .shape1 { fill: #334155; }
+      .shape2 { fill: #475569; } 
+      .shape3 { fill: #1E293B; }
+    }
+  </style>
+  <rect class="bg" width="500" height="800"/>
+  <g opacity="0.9">
+    <path class="shape1" d="M-62 85.5L250 -150L-150 -150L-150 85.5C-120.333 41.8333 -62 85.5 -62 85.5Z"/>
+    <path class="shape2" d="M500 800L250 500L500 500L500 800Z"/>
+    <path class="shape3" d="M-5.5 800L226 550L-5.5 550L-5.5 800Z"/>
+    
+    <rect x="-100" y="250" width="700" height="300" rx="150" transform="rotate(15 250 400)" class="shape2"/>
+    <rect x="-50" y="300" width="600" height="200" rx="100" transform="rotate(15 250 400)" class="shape3"/>
+    
+    <circle cx="450" cy="50" r="100" class="shape1"/>
+    <circle cx="450" cy="50" r="40" class="shape3"/>
+  </g>
+</svg>

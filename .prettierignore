@@ -1,0 +1,8 @@
+.env
+.gitignore
+.prettierignore
+package-lock.json
+
+/build/
+/node_modules/
+/.react-router/
