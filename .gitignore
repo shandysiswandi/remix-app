@@ -8,3 +8,9 @@
 # local
 .env
 .vscode/
+
+# Playwright
+/.playwright-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
